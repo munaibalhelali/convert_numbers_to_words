@@ -19,4 +19,6 @@ jobs:
       run: ./configure
     - name: make
       run: make
+    - name: run program
+      run: ./output/main
       
