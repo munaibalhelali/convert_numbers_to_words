@@ -5,6 +5,7 @@
 int main(){
     MS::UTest utest("converting numbers to words");
     MS::NumWord num_word;
+    
     utest.test("Singles", num_word.convert(1).compare("one"));
     utest.test("Twenties", num_word.convert(22).compare("twenty-two"));
     utest.test("Hundreds", num_word.convert(234).compare("two hundred thirty-four"));
